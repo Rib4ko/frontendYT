@@ -73,7 +73,7 @@ const App = () => {
     setProgressStep(1); // Step 1: Request sent
     try {
       setProgressStep(2); // Step 2: Processing
-      const response = await axios.post("http://localhost:8000/clip", {
+      const response = await axios.post("https://backendyt-lypc.onrender.com/clip", {
         url,
         start: timeToSeconds(start),
         end: timeToSeconds(end),
